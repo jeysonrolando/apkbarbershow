@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context="com.material.cortes.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:text="Inicio"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        tools:text="Inicio"
+        android:layout_marginStart="17dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="________________________________________________"
+        android:textColor="@android:color/white"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/registro"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorPrimary"
+        android:onClick="Resgristrece_logib"
+        android:text="Registrarme"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/llamarCortes"
+        app:layout_constraintLeft_toLeftOf="@+id/Reserver"
+        app:layout_constraintRight_toRightOf="@+id/llamarCortes"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/llamarCortes"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="llamar_cortes"
+        android:text="Tipos de Cortes "
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/Reserver"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/Reserver"
+        android:layout_width="188dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginTop="31dp"
+        android:background="@color/colorPrimary"
+        android:onClick="Resservas"
+        android:text="Horarios de Atencion"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llamarCortes"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+</android.support.constraint.ConstraintLayout>
